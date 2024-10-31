@@ -8,8 +8,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea Page</title>
+    <!-- font awsome -->
+    <script src="https://kit.fontawesome.com/432ea70f4f.js" crossorigin="anonymous"></script>
+    <!-- tailwind cdn and daisy -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- custom css -->
     <style>
         .font-man {
             font-family: "Manrope", sans-serif;
@@ -18,8 +34,35 @@
 </head>
 
 <body>
-    <header>
+    <header class="container mx-auto mt-16">
+        <div class="hero">
+            <div class="hero-content gap-12 flex-col lg:flex-row">
+                <div class="space-y-7">
+                    <h1 class="text-6xl lg:text-7xl font-extrabold text-[#1C1C1C]">
+                        It's good <br>
+                        tea time at The <br>
+                        Tea House
+                    </h1>
+                    <p class="text-base font-medium text-[#777]">
+                        Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
+                    </p>
+                    <button class="btn btn-primary">Explore More</button>
+                </div>
+                <div>
+                    <img src="images/banner.png" class="max-w-sm lg:max-w-xl" />
+                    <div class="flex items-center gap-3 bg-white drop-shadow-lg w-56 rounded-lg -mt-20 p-5">
+                        <i class="fa-solid fa-star text-3xl text-amber-400"></i>
+                        <div>
+                            <div>
+                                <h3 class="font-extrabold text-3xl">5.00</h3>
+                                <div class="text-base font-semibold text-[#777] block">Trust Pilot Ratings</d>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
     </header>
     <main>
 
