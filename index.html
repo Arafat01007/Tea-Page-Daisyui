@@ -43,9 +43,9 @@
 
 <body>
     <!-- header -->
-    <header class="font-man container mx-auto mt-16">
-        <div class="hero">
-            <div class="hero-content gap-12 flex-col lg:flex-row">
+    <header class="font-man container mx-auto mt-16 px-5 lg:px-0">
+        <div class="">
+            <div class="flex justify-between items-center gap-12 flex-col lg:flex-row">
                 <div class="space-y-7">
                     <h1 class="text-5xl lg:text-7xl font-extrabold text-[#1C1C1C]">
                         It's good <br>
@@ -55,7 +55,7 @@
                     <p class="text-base font-medium text-[#777]">
                         Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
                     </p>
-                    <button class="btn btn-primary">Explore More</button>
+                    <button class="btn bg-gradient-to-r from-[#FF8938] to-[#F00] text-white">Explore More</button>
                 </div>
                 <div>
                     <img src="images/banner.png" class="max-w-sm lg:max-w-xl" />
@@ -159,17 +159,19 @@
         </section>
         <!-- super clients section -->
         <section
-            class="my-32 rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00] px-16 py-24 flex flex-col lg:flex-row gap-14">
+            class="my-32 rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00] px-5 lg:px-16 py-24 flex flex-col lg:flex-row gap-14">
             <div class=" flex items-center lg:pr-32">
                 <div class="space-y-6">
                     <h2 class="lg:text-5xl text-3xl font-extrabold text-white">
                         Meet Our Super <br>
                         Clients</h2>
-                    <p class="md:text-base  text-sm font-medium text-white">There are many variations of passages of Lorem Ipsum
+                    <p class="md:text-base  text-sm font-medium text-white">There are many variations of passages of
+                        Lorem Ipsum
                         available, but the majority have suffered alteration in some form, by injected humour, or
                         randomised
                         words which don't look even slightly believable. </p>
-                    <button class="btn rounded-lg bg-white">Show All</button>
+                    <button class="btn rounded-lg bg-white text-gradient-to-r from-[#FF8938] to-[#F00]">Show
+                        All</button>
                 </div>
             </div>
             <!-- review container -->
@@ -212,9 +214,109 @@
                 </div>
             </div>
         </section>
-    </main>
-    <footer>
 
+        <!-- news and events section -->
+        <section class="mb-28  mx-auto">
+            <div class="text-center">
+                <h2 class="text-[45px] font-extrabold mb-5">News & Events</h2>
+                <p class="text-gray-500 font-medium text-base max-w-4xl mx-auto mb-12">There are many variations of
+                    passages
+                    of
+                    Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,
+                    or
+                    randomised words which don't look even slightly believable. </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class=" card border-[#D2D2D2] border-2 p-6">
+                    <figure>
+                        <img src="images/news-1.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h4 class="card-title font-medium text-gray-500 text-base">Feb 05, 2027</h4>
+                        <h2 class="font-extrabold text-xl">Collecting 8 points for discount</h2>
+                        <p class="font-medium text-gray-500 text-base">There are many variations of passages of Lorem
+                            Ipsum
+                            available.</p>
+                        <h4 class="font-bold text-base">Learn More</h4>
+                    </div>
+                </div>
+                <div class="card card-compact bg-base-100 border-[#D2D2D2] border-2 p-6">
+                    <figure>
+                        <img src="images/news-2.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h4 class="card-title font-medium text-gray-500 text-base">Feb 05, 2027</h4>
+                        <h2 class="font-extrabold text-xl">Collecting 8 points for discount</h2>
+                        <p class="font-medium text-gray-500 text-base">There are many variations of passages of Lorem
+                            Ipsum
+                            available.</p>
+                        <h4 class="font-bold text-base">Learn More</h4>
+                    </div>
+                </div>
+                <div class="card card-compact bg-base-100 border-[#D2D2D2] border-2 p-6">
+                    <figure>
+                        <img src="images/news-3.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h4 class="card-title font-medium text-gray-500 text-base">Feb 05, 2027</h4>
+                        <h2 class="font-extrabold text-xl">Collecting 8 points for discount</h2>
+                        <p class="font-medium text-gray-500 text-base">There are many variations of passages of Lorem
+                            Ipsum
+                            available.</p>
+                        <h4 class="font-bold text-base">Learn More</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gradient-to-r from-[#FF00001A] to-[#FF89381A] py-12 px-5  lg:px-48">
+        <div class=" flex justify-between mb-20 ">
+            <img src="images/cup.png" alt="">
+            <p>
+                <span>Ready to get started?</span>
+                <button class="btn bg-gradient-to-r from-[#FF8938] to-[#F00] text-white">Get Started</button>
+            </p>
+        </div>
+        <div class="footer text-base-content">
+            <nav>
+                <h6 class="footer-title">Quick Links</h6>
+                <a class="link link-hover">Home</a>
+                <a class="link link-hover">About Us</a>
+                <a class="link link-hover">Insurance</a>
+                <a class="link link-hover">Privacy Policy</a>
+            </nav>
+            <nav>
+                <h6 class="footer-title">Our Service</h6>
+                <a class="link link-hover">House Insurance</a>
+                <a class="link link-hover">Life Insurance</a>
+                <a class="link link-hover">Car Insurance</a>
+                <a class="link link-hover">Health Insurance</a>
+            </nav>
+            <nav>
+                <h6 class="footer-title">Help</h6>
+                <a class="link link-hover">FAQs</a>
+                <a class="link link-hover">Contact Us</a>
+            </nav>
+            <form>
+                <h6 class="footer-title">Subscribe to our newsletter</h6>
+                <fieldset class="form-control w-80">
+                    <label class="label">
+                        <span class="label-text">Enter your email address</span>
+                    </label>
+                    <div class="join">
+                        <input type="text" placeholder="username@site.com"
+                            class="py-4 bg-transparent border-b-2 border-gray-500 " />
+                        <button
+                            class="btn bg-gradient-to-r from-[#FF8938] to-[#F00] text-white cursor-pointer rounded-full">
+                            <i class="fa-solid fa-chevron-right "></i>
+                        </button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="footer footer-center text-base-content p-4 mt-24">
+            <p>Copyright © 2050 - All right reserved by ACME Industries Ltd</p>
+        </div>
     </footer>
 </body>
 
